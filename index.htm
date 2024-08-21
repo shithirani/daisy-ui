@@ -14,5 +14,113 @@
 
     <h1>This is new feature</h1>
     <button class="btn">click me </button>
+    <button class=" btn btn-primary">primary</button>
+<br>
+
+    <button class="btn">Button</button>
+<button class="btn btn-neutral">Neutral</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-accent">Accent</button>
+<button class="btn btn-ghost">Ghost</button>
+<button class="btn btn-link">Link</button><br> <br>
+
+<details class="dropdown">
+    <summary class="btn m-1">open or close</summary>
+    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+      <li><a>Item 1</a></li>
+      <li><a>Item 2</a></li>
+    </ul>
+  </details>
+
+  <!-- modal -->
+   <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<!-- swap -->
+<label class="swap swap-flip text-2xl">
+    <!-- this hidden checkbox controls the state -->
+    <input type="checkbox" />
+  
+    <div class="swap-on">😈</div>
+    <div class="swap-off">😇</div>
+  </label>
+  <!-- avatar -->
+  <div class="avatar">
+    <div class="w-32 rounded">
+      <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+    </div>
+  </div>
+  <div class="avatar">
+    <div class="w-20 rounded">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+        alt="Tailwind-CSS-Avatar-component" />
+    </div>
+  </div>
+  <div class="avatar">
+    <div class="w-16 rounded">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+        alt="Tailwind-CSS-Avatar-component" />
+    </div>
+  </div>
+  <div class="avatar">
+    <div class="w-8 rounded">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+        alt="Tailwind-CSS-Avatar-component" />
+    </div>
+  </div>
+
+  <div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item relative w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
